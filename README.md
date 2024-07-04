@@ -14,3 +14,38 @@ The data_converter.py script provides an easy way to transform CSV and JSON file
 
    `bash
    pip install pandas avro-python3
+
+## Use
+
+1. Save the script: Save the data_converter.py file in the same directory as the CSV or JSON files you want to convert, along with the schema.avsc file.
+
+2. Run the script: Open a terminal or command line and run the script:
+
+3. Interaction with the script: The script will prompt you for the following:
+Input file type: Enter "CSV" or "JSON".
+Input file name: Enter the name of the file, including the file extension (e.g. "data.csv" or "data.json").
+
+4. Output: The script will create two output files in the same directory:
+Parquet file: With the extension ".parquet" (e.g. "data.parquet").
+Avro file: With the extension ".avro" (e.g. "data.avro").
+
+## Avro scheme
+
+The script uses a predefined Avro schema for Avro conversion. The schema is defined in the schema.avsc file. 
+
+Example of schema.avsc:
+
+{
+  "tipo": "registro",
+  "nombre": "Datos",
+  "fields": [
+    {"name": "campo1", "tipo": "cadena"},
+    {"name": "field2", "type": "int"},
+    {"name": "field3", "type": "double"},
+    {"name": "field4", "type": "string"}
+  ]
+} 
+
+
+
+
