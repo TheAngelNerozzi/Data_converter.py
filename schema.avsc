@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "Data",
+  "fields": [
+    {"name": "field1", "type": "string"},
+    {"name": "field2", "type": "int"},
+    {"name": "field3", "type": "double"},
+    {"name": "field4", "type": "string"}
+  ]
+}
